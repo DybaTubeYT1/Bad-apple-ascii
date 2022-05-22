@@ -1,5 +1,5 @@
 
-const density = "Ñ@#W$9876543210?!abc;:+=-,._      ";
+const density = "Ñ@#W$9876543210?!abc;:+=-,._         ";
 
 
 let video;
@@ -7,7 +7,7 @@ let asciiDiv;
 let playing = true;
 
 function setup() {
-  noCanvas()
+  createCanvas()
 
   video = createVideo('badapple.mp4');
   video.size(48,36);
