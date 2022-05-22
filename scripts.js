@@ -10,22 +10,15 @@ let asciiDiv
 function setup() {
   noCanvas()
 
-  const loadVideos = (i = -1) => {
-    i ++;
-    if (i <= videoPaths.length - 1){
-          videos[i] = createVideo(videoPaths[i], loadVideo(i));
-   } else {
-          videos[i] = createVideo(videoPaths[i]);
-   }
-   
-  }
 
 
-  videos = createVideo('badapple.mp4')
+  videos = createVideo('BadApple.mp4')
+  videos.play()
   videos.size(48,36)
   videos.hide()
   videos.loop()
   videos.volume(1)
+
 
   asciiDiv = createDiv();
 }
