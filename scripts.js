@@ -7,14 +7,18 @@ let asciiDiv;
 let playing = true;
 
 function setup() {
-  createCanvas()
+  noCanvas();
 
-  video = createVideo('badapple.mp4');
+  video = createVideo('badapple.mp4', vidLoad);
   video.size(48,36);
-  video.volume(1)
-  video.loop()
+
 
   asciiDiv = createDiv();
+}
+
+function vidLoad() {
+  video.loop();
+  video.volume(1)
 }
 
 function draw() {
